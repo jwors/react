@@ -3,12 +3,14 @@ import { wxLogin } from '~/api/user'
 
 interface UserSliceInitialState {
   userInfo: object
-  id: number
 }
 
 const initialState: UserSliceInitialState = {
-  userInfo: {},
-  id: 0
+  userInfo: {
+    name: 'jack',
+    age: 19,
+    id: 0
+  }
 }
 
 export const userSlice = createSlice({
